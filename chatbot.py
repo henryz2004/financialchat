@@ -3,7 +3,7 @@ import utils as ut
 import streamlit as st
 import codecs
 
-st.title("ChatGPT-like clone")
+st.title("AI Financial Times Chatbot for Mithril Security")
 
 client = OpenAI(api_key=codecs.decode("fx-ZVcU4xyr3d0rpO1LTCbYG3OyoxSWT3l8L6HUVzdEQae6vamL", "rot_13"))
 
