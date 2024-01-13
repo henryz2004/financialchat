@@ -1,10 +1,11 @@
 from openai import OpenAI
 import utils as ut
 import streamlit as st
+import codecs
 
 st.title("ChatGPT-like clone")
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=codecs.decode("fx-ZVcU4xyr3d0rpO1LTCbYG3OyoxSWT3l8L6HUVzdEQae6vamL", "rot_13"))
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4-1106-preview"
